@@ -20,9 +20,22 @@ namespace WPFHelloWorld_indyCaluwe
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int klikcount = 1;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            MyLabel.Content = ("De wereldbol is een ruimteschip.");
+            mijnStatusLabe.Background = (Brushes.Red);
+            MyButton.Content = "klik hier [" + klikcount + "]";
+            klikcount = klikcount + 1;
+
+
         }
     }
 }

@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:WPFHelloWorld_indyCaluwe"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid RenderTransformOrigin="0.593,0.63">
+        <Label Content="hella wereld ik ben that boy Indy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="169,10,0,0"/>
+        <Button x:Name="MyButton" Content="Klik hier" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="187,146,0,0" Background="#FF00B900" FontFamily="Sitka Subheading" Foreground="White" Click="Button_Click" Height="65"/>
+        <Label x:Name="MyLabel" Content="klik hier" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,86,0,0" Height="30" Width="75"/>
+        <Label x:Name="mijnStatusLabe" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,149,0,0" Background="#FFFFC500" RenderTransformOrigin="0.5,0.5" Height="61" Width="51">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="6.707"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+
+
     </Grid>
 </Window>
